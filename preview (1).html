@@ -1,0 +1,123 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Explora Colombia</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f8f4;
+      color: #24352a;
+    }
+
+    header {
+      background: #176b45;
+      color: white;
+      padding: 22px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 12px;
+      text-decoration: none;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 75px 20px;
+      background: #d8edda;
+    }
+
+    .hero h2 {
+      font-size: 38px;
+    }
+
+    button {
+      background: #176b45;
+      color: white;
+      padding: 13px 24px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    .destinos {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      padding: 35px 15px;
+    }
+
+    .card {
+      background: white;
+      padding: 25px;
+      border-radius: 12px;
+      width: 220px;
+      text-align: center;
+      box-shadow: 0 3px 10px #0001;
+    }
+
+    footer {
+      background: #176b45;
+      color: white;
+      text-align: center;
+      padding: 18px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Explora Colombia 🇨🇴</h1>
+    <nav>
+      <a href="#inicio">Inicio</a>
+      <a href="#destinos">Destinos</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="inicio">
+    <h2>¡Descubre lugares increíbles!</h2>
+    <p>Conoce la belleza, la cultura y la naturaleza de Colombia.</p>
+    <button onclick="mostrarMensaje()">
+      Explorar destinos
+    </button>
+    <p id="mensaje"></p>
+  </section>
+
+  <section id="destinos">
+    <h2 style="text-align:center">Nuestros destinos</h2>
+    <div class="destinos">
+      <div class="card">
+        <h3>🏖️ Cartagena</h3>
+        <p>Playas hermosas y calles llenas de historia.</p>
+      </div>
+      <div class="card">
+        <h3>🌿 Eje Cafetero</h3>
+        <p>Montañas verdes y paisajes naturales.</p>
+      </div>
+      <div class="card">
+        <h3>🏙️ Medellín</h3>
+        <p>Cultura, innovación y lugares fascinantes.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer id="contacto">
+    <p>© 2026 Explora Colombia | Todos los derechos reservados</p>
+  </footer>
+
+  <script>
+    function mostrarMensaje() {
+      document.getElementById("mensaje").textContent =
+        "¡Tu próxima aventura comienza en Colombia!";
+    }
+  </script>
+
+</body>
+</html>
